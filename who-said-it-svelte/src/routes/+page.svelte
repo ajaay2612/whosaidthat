@@ -145,7 +145,7 @@
 
 {#if $ShowLoader}
     <div class="flex text-[2em] orangeText justify-center items-center fixed z-[100] bg-[#00000094] left-0 top-0 w-full h-full ">
-        loading...
+        <div class="relative translate-x-[-15%]">loading<span class="loading-dots absolute left-full ml-[0.1em]"></span></div>
     </div>
 {/if}
 
@@ -179,7 +179,9 @@
     </pre> -->
 
 {:else}
-    <p class="text-[2em] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2">loading...</p>
+    <div class="text-[2em] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2">
+        <div class="relative translate-x-[-15%]">loading<span class="loading-dots absolute left-full ml-[0.1em]"></span></div>
+    </div>
 
 {/if}
 
